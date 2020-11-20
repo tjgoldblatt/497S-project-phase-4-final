@@ -3,7 +3,7 @@ Overview:
 The goal of our project is to develop a website that enables users to make plans with their friend group by utilizing the Yelp API to give locations in a specific area. Our goal is to have a group of friends stored in a database, and when that group wants to meet up somewhere, they will use the Yelp API microservice by searching for an activity in a location, which will create an event in an event database that stores the name, group that created the event, date/time, location, and the type of activity the group wants to do. This will allow the friend groups to agree on a location, time, and place in one central location.
 
 ## Team Members:
-Ron Arbo 
+Ron Arbo\
 TJ Goldblatt\
 Joe Pasquale\
 Juelin Lui\
