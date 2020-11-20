@@ -36,7 +36,7 @@ uWSGI is our service for connecting Python to Nginx and it actually has great sc
 TJ - https://www.youtube.com/watch?v=ubq48EbuDOo&feature=youtu.be \
 Joe - https://youtu.be/I6b81Kp82wM \
 Ron - https://youtu.be/KuTlRGPYYqA \
-Juelin \
+Juelin - https://youtu.be/laD2UVbHJiE \
 Nick
 
 ## Project Demonstration:
