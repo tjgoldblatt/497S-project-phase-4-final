@@ -3,11 +3,11 @@ Overview:
 The goal of our project is to develop a website that enables users to make plans with their friend group by utilizing the Yelp API to give locations in a specific area. Our goal is to have a group of friends stored in a database, and when that group wants to meet up somewhere, they will use the Yelp API microservice by searching for an activity in a location, which will create an event in an event database that stores the name, group that created the event, date/time, location, and the type of activity the group wants to do. This will allow the friend groups to agree on a location, time, and place in one central location.
 
 ## Team Members:
-Ron Arbo
-TJ Goldblatt
-Joe Pasquale
-Juelin Lui
-Nikil Thurai
+Ron Arbo \n
+TJ Goldblatt \n
+Joe Pasquale \n
+Juelin Lui \n
+Nikil Thurai \n
 
 ## System Design:
 Note: In our project repo's README, we have links to each of the READMEs for our microservices, with details such as service author, description of the service, and how to properly use the service functionality. So for service-specific descriptions, those are the best place to look.
@@ -30,11 +30,11 @@ We found a software called SoapUI that we have been using as a load testing inte
 uWSGI is our service for connecting Python to Nginx and it actually has great scalability functionality. In the uWSGI configuration file, you’re able to specify the amount of threads to be allocated to a particular service. We  conducted some tests, and found that increasing this number of threads actually helped the performance of our application. We tested our /group/read endpoint with our SoapUI load testing interface. We first tested with 2 threads for the groups service, and found an average time per request of 25.06 milliseconds. We tested the endpoint over the course of 1000 requests, and we did this 3 times. Then, we tested again except we used 8 threads. This time, we found an average time per request of 16.85 milliseconds. We tested three trials here as well, 2 of which were 1000 runs and one of 500 runs. So, we can conclude that this functionality of uWSGI can be used to scale larger systems for improved performance. Obviously it isn’t feasible to just increase the number of threads every time you want to make your system faster, but it’s safe to assume that, through testing, one can optimize their number of threads to yield both a fast and efficient final product.
 
 ## Personal Video Demonstrations:
-TJ - https://www.youtube.com/watch?v=ubq48EbuDOo&feature=youtu.be
-Joe - https://youtu.be/I6b81Kp82wM 
-Ron - https://youtu.be/KuTlRGPYYqA 
-Juelin 
-Nick
+TJ - https://www.youtube.com/watch?v=ubq48EbuDOo&feature=youtu.be \n
+Joe - https://youtu.be/I6b81Kp82wM \n
+Ron - https://youtu.be/KuTlRGPYYqA \n
+Juelin \n
+Nick \n
 
 ## Project Demonstration:
 https://youtu.be/x7r8-5Y_M94 
