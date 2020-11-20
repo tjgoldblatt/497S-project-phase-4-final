@@ -7,7 +7,7 @@ Ron Arbo
 TJ Goldblatt\
 Joe Pasquale\
 Juelin Lui\
-Nikil Thurai\
+Nikil Thurai
 
 ## System Design:
 Note: In our project repo's README, we have links to each of the READMEs for our microservices, with details such as service author, description of the service, and how to properly use the service functionality. So for service-specific descriptions, those are the best place to look.
@@ -34,7 +34,7 @@ TJ - https://www.youtube.com/watch?v=ubq48EbuDOo&feature=youtu.be \
 Joe - https://youtu.be/I6b81Kp82wM \
 Ron - https://youtu.be/KuTlRGPYYqA \
 Juelin \
-Nick \
+Nick
 
 ## Project Demonstration:
 https://youtu.be/x7r8-5Y_M94 
