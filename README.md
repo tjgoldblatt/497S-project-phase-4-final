@@ -31,8 +31,10 @@ Nginx simplifies the way we route and distribute requests received by the applic
 After research, we found mongoDB to be the best DB available for scalability. It also has a convenient image for Docker containers, making it easy to integrate into our project.
 We found a software called SoapUI that we have been using as a load testing interface for our project. In this software, you can specify an endpoint that you’d like to call, and SoapUI will call for a set amount of times and give you statistics about response time like min, max, average, etc. This software has much more functionality than what we used it for, but it was perfect as a simple load tester that allowed us to check if our scalable systems were actually as such. 
 uWSGI is our service for connecting Python to Nginx and it actually has great scalability functionality. In the uWSGI configuration file, you’re able to specify the amount of threads to be allocated to a particular service. We  conducted some tests, and found that increasing this number of threads actually helped the performance of our application, but only to a certain extent. Some results on different group members' (Ron & TJ) machines are shown below:  
-<img width="431" alt="Screen Shot 2020-11-27 at 8 24 05 PM" src="https://user-images.githubusercontent.com/42826472/100491017-9a0fab80-30ee-11eb-8730-419b22a31e0c.png">  
 <img width="636" alt="Screen Shot 2020-11-27 at 8 23 50 PM" src="https://user-images.githubusercontent.com/42826472/100491025-a72c9a80-30ee-11eb-886c-da4651dcb7ed.png">  
+<img width="431" alt="Screen Shot 2020-11-27 at 8 24 05 PM" src="https://user-images.githubusercontent.com/42826472/100491017-9a0fab80-30ee-11eb-8730-419b22a31e0c.png">  
+It's hard to derive a solid conclusion from the results given, but they're interesting nonetheless. On Ron's machine, you can see that the average time is the lowest at around 8 threads, and either plateaus or even increases after that. The results from TJ's machine differ slightly. They're a little more scattered, making it hard to conclude anything about them. Either way, we can see a change in time as we change the uWSGI thread configuration, showing that this setting can likely be optimized for whatever scale you intend to use for your project.
+
 
 ## Personal Video Demonstrations:
 TJ - https://www.youtube.com/watch?v=ubq48EbuDOo&feature=youtu.be \
